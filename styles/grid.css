@@ -1,0 +1,22 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    grid-template-rows: repeat(3, 150px) 50px 50px;
+}
+.grid-box{
+    background-color: rgb(57, 95, 127);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 8px;
+    border-radius: 5px;
+}
+.grid-box1{
+    grid-row: span 5;
+    border: 3px solid red;
+}
+#grid-11, #grid-12{
+    grid-column: span 3;
+}
