@@ -20,3 +20,33 @@
 #grid-11, #grid-12{
     grid-column: span 3;
 }
+
+/* Small Device media query*/
+
+@media screen and (max-width: 576px){
+    .grid{
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(6, 150px);
+    }
+    .grid-box1{
+        grid-row: span 1;
+    }
+    #grid-11, #grid-12{
+        grid-column: span 1;
+    }
+}
+
+/* Medium Device Media query */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .grid{
+
+    }
+    .grid-box1{
+        grid-row: span 3;
+    }
+    #grid-11, #grid-12{
+        grid-column: span 4;
+    }
+}
+
+/* Made this grid more responsive for small device, medium device and large device */
