@@ -3,7 +3,10 @@
     background-color: skyblue;
     border: 2px solid tomato;
     border-radius: 8px;
-    padding: 5px;
+    padding: 20px;
+}
+.aside{
+    margin-bottom: 15px;
 }
 .header{
     grid-area: header;
@@ -34,4 +37,31 @@
     ;
 }
 
-/*  */
+/* Grid area responsiveness for small device */
+@media screen and (max-width:576px) {
+    .container{
+        grid-template-areas:
+        "header"
+        "nav "
+        "main "
+        "aside"
+        "advertise"
+        "footer"
+        ;
+    }
+}
+/* Grid area responsiveness for medium device */
+@media screen and (min-width:576px) and (max-width:992px){
+    .container{
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "aside main main " 
+        "advertise footer footer"
+        ;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
